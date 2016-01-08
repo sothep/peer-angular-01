@@ -22,8 +22,8 @@ app.controller("myController", function($scope, $http){
       url: '/election'
     }).then(function(response){
       $scope.prez = response.data;
-      $('.president').hide();
-      $('.president').slideDown();
+      $('h4').hide();
+      $('h4').slideDown(800);
     });
   };
 

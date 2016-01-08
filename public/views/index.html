@@ -3,23 +3,28 @@
   <head>
     <meta charset="utf-8">
     <title>Peer-Angular</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
     <script src="scripts/vendors/angular.min.js"></script>
     <script src="scripts/vendors/jquery.min.js"></script>
     <script src="scripts/client.js"></script>
   </head>
   <body ng-controller="myController">
     <h1>Who Will Be President?!</h1>
-    <button ng-click="loadCandidates()" class='load-folks'>Present the candidates!</button>
     <div class="candidates">
-      <ul>
-        <li ng-repeat="n in dems track by $index">{{n}}</li>
-      </ul>
-      <ul>
-        <li ng-repeat="n in repubs track by $index">{{n}}</li>
-      </ul>
+      <div class="btn">
+        <button ng-click="loadCandidates()" class='load-folks'>Present the candidates!</button>
+      </div>
+        <ul>
+          <li ng-repeat="n in dems track by $index">{{n}}</li>
+        </ul>
+        <ul>
+          <li ng-repeat="n in repubs track by $index">{{n}}</li>
+        </ul>
     </div>
-    <button ng-click="choosePresident()" class='choose-prez'>Elect our fearless leader!</button>
     <div class="president">
+      <div class="btn">
+        <button ng-click="choosePresident()" class='choose-prez'>Elect our fearless leader!</button>
+      </div>
       <h4>{{prez}}</h4>
     </div>
   </body>

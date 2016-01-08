@@ -1,0 +1,24 @@
+h1 {
+  text-decoration: underline;
+  text-align: center;
+}
+
+ul {
+  display: inline-block;
+}
+
+li {
+  list-style: none;
+}
+
+.candidates {
+  text-align: center;
+}
+
+.candidates li {
+  text-align: left;
+}
+
+.president {
+  text-align: center;
+}
